@@ -11,7 +11,9 @@ module.exports = function(hour, minute, second, timezone) {
   hour = ('0' + hour).slice(-2);
   minute = ('0' + minute).slice(-2);
   second = ('0' + second).slice(-2);
-  if (!timezone || typeof timezone != 'number' || timezone < -12 || 12 < timezone) {
+  if (timezone == null || typeof timezone != 'number' || timezone < -12 || 12 < timezone) {
+    timezone = null;
+  } else if (timezone == 0) {
     timezone = 'Z';
   } else {
     var t = timezone.toString();
@@ -23,5 +25,9 @@ module.exports = function(hour, minute, second, timezone) {
     }
     timezone = t + ':00';
   }
-  return hour + ':' + minute + ':' + secont + timezone;
+  var result = hour + ':' + minute + ':' + second;
+  if (timezone != null) {
+    result = result + timezone;
+  }
+  return result;
 };

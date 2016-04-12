@@ -27,13 +27,14 @@ datetime.composeDate(2016, 12, 31); // '2016-12-31'
 
 ### composeTime(hour, minute, second, timezone)
 ```
-datetime.composeTime(); // '00:00:00Z'
-datetime.composeTime(12, 34, 56, 9); // '12:34:56+09:00'
+datetime.composeTime(); // '00:00:00'
+datetime.composeTime(12, 34, 56, 0); // '12:34:56Z'
+datetime.composeTime(12, 34, 56, -7); // '12:34:56-07:00'
 ```
 
 ### composeDatetime(year, month, day, hour, minute, second, timezone)
 ```
-datetime.composeDatetime(); // '1970-01-01T00:00:00Z'
+datetime.composeDatetime(); // '1970-01-01T00:00:00'
 datetime.composeDatetime(2016, 4, 1, 12, 34, 56, 9); // '2016-04-01T12:34:56+09:00'
 ```
 
@@ -45,8 +46,8 @@ datetime.decomposeDate('2016-04-01');
 
 ### decomposeTime(time)
 ```
-datetime.decomposeTime('12:34:56Z');
-// {hour: '12', minute: '34', second: '56', timezone: 'Z'}
+datetime.decomposeTime('12:34:56');
+// {hour: '12', minute: '34', second: '56', timezone: ""}
 ```
 
 ### decomposeDatetime(datetime)
