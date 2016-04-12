@@ -1,0 +1,23 @@
+{
+  "name": "drossel-datetime",
+  "version": "1.0.0",
+  "description": "Unnesessary datetime formatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "iso8601",
+    "rfc3339"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanocloudx/drossel-datetime.git"
+  },
+  "author": "nanocloudx <nanocloudx@gmail.com>",
+  "homepage": "http://drossel.io/",
+  "license": "MIT"
+}
