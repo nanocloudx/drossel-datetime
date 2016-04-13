@@ -6,7 +6,7 @@ module.exports = function(datetime) {
     return null;
   }
   datetime = datetime.split('T');
-  if (time.length != 2) {
+  if (datetime.length != 2) {
     return null;
   }
   var date = decomposeDate(datetime[0]);
