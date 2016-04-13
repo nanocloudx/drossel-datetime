@@ -7,8 +7,8 @@ module.exports = function(date) {
     return null;
   }
   return {
-    year: date[0],
-    month: date[1],
-    day: date[2]
+    year: date[0].slice(0, 4),
+    month: date[1].slice(0, 2),
+    day: date[2].slice(0, 2)
   };
 };

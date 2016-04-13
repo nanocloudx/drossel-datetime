@@ -9,8 +9,8 @@ module.exports = function(datetime) {
   if (time.length != 2) {
     return null;
   }
-  date = decomposeDate(datetime[0]);
-  time = decomposeTime(datetime[1]);
+  var date = decomposeDate(datetime[0]);
+  var time = decomposeTime(datetime[1]);
   if (!date || !time) {
     return null;
   }

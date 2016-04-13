@@ -1,11 +1,11 @@
 module.exports = function(hour, minute, second, timezone) {
-  if (!hour || typeof hour != 'number' || hour < 0 || 24 < hour) {
+  if (!hour || typeof hour != 'number' || hour < 0 || 23 < hour) {
     hour = '00';
   }
-  if (!minute || typeof minute != 'number' || minute < 0 || 60 < minute) {
+  if (!minute || typeof minute != 'number' || minute < 0 || 59 < minute) {
     minute = '00';
   }
-  if (!second || typeof second != 'number' || second < 0 || 60 < second) {
+  if (!second || typeof second != 'number' || second < 0 || 59 < second) {
     second = '00';
   }
   hour = ('0' + hour).slice(-2);

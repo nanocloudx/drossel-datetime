@@ -8,9 +8,9 @@ module.exports = function(time) {
     return null;
   }
   return {
-    hour: time[0],
-    minute: time[1],
-    second: time[2],
+    hour: time[0].slice(0, 2),
+    minute: time[1].slice(0, 2),
+    second: time[2].slice(0, 2),
     timezone: timezone
   };
 };

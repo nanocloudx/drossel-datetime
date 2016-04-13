@@ -1,6 +1,6 @@
 {
   "name": "drossel-datetime",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Unnesessary datetime formatter",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "date",
     "time",
     "datetime",
-    "iso8601",
-    "rfc3339"
+    "timestamp",
+    "iso8601"
   ],
   "repository": {
     "type": "git",
