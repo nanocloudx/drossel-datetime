@@ -19,6 +19,11 @@ var datetime = require('drossel-datetime');
 
 ## Usage
 
+### getDate()
+```
+datetime.getDate(); // '2016-12-31'
+```
+
 ### composeDate(year, month, day)
 ```
 datetime.composeDate(); // '1970-01-01'

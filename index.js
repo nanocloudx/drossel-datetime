@@ -1,4 +1,5 @@
 module.exports = {
+  getDate: require('./libs/get-date'),
   composeDate: require('./libs/compose-date'),
   composeTime: require('./libs/compose-time'),
   composeDatetime: require('./libs/compose-datetime'),
