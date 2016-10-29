@@ -1,6 +1,6 @@
 {
   "name": "drossel-datetime",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Unnesessary datetime formatter",
   "main": "index.js",
   "scripts": {

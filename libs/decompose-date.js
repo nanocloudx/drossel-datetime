@@ -2,7 +2,7 @@ module.exports = function(date) {
   if (typeof date != 'string') {
     return null;
   }
-  date = date.split('-');
+  date = new Date(date).toISOString().split('-');
   if (date.length != 3) {
     return null;
   }
